@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "components",
         "global",
-        "npm"
+        "npm",
+        "style"
     ]
 }
