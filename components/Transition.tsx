@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 
 const transitionVariants = {
-  intial: {
-    x: "10%",
+  initial: {
+    x: "100%",
     width: "100%",
   },
   animate: {
@@ -18,9 +18,30 @@ const transitionVariants = {
 const Transition = () => {
   return (
     <>
-      <motion.div>1</motion.div>
-      <motion.div>2</motion.div>
-      <motion.div>3</motion.div>
+      <motion.div
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-primary-300"
+        variants={transitionVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+      ></motion.div>{" "}
+      <motion.div
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-primary-200"
+        variants={transitionVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
+      ></motion.div>{" "}
+      <motion.div
+        className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-primary-100"
+        variants={transitionVariants}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
+      ></motion.div>
     </>
   );
 };

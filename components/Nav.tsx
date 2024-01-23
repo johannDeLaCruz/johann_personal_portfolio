@@ -41,14 +41,14 @@ const Nav = () => {
 
   return (
     <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
-      <div className="bg-primary-100/30 text-body1 flex w-full items-center justify-between xl:rounded-full xl:justify-center xl:flex-col gap-y-10 px-4 py-8 md:px-40 xl:px-0 h-[80px] xl:h-max backdrop-blur-sm group group-hover:text-accent-500">
+      <div className="bg-primary-400/30 text-body1 flex w-full items-center justify-between xl:rounded-full xl:justify-center xl:flex-col gap-y-10 px-4 py-8 md:px-40 xl:px-0 h-[80px] xl:h-max backdrop-blur-sm group group-hover:text-accent-500">
         {navData.map((link, index) => (
           <Link
             key={index}
             href={link.path}
             className={`${
-              link.path === pathName ? "text-accent-500" : ""
-            } text-primary-500 relative flex items-center hover:text-accent-500 transition-all duration-300s shadow-inner`}
+              link.path === pathName ? "text-accent-500" : "text-primary-500"
+            } relative flex items-center hover:text-accent-500 transition-all duration-300s`}
           >
             <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
               <div className="bg-white relative p-1 flex items-center rounded-[3px]">
