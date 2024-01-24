@@ -90,7 +90,7 @@ const config: Config = {
         "900": "#811b1b",
         "950": "#460909",
       },
-      white: "#fff",
+      white: "E9E9E9",
       black: "#000",
     },
     backgroundImage: {

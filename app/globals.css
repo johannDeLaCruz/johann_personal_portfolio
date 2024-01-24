@@ -21,7 +21,22 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #E9E9E9    
+  background: #E9E9E9 
+  /* background-image: linear-gradient(
+  140deg,
+  hsl(0deg 0% 91%) 0%,
+  hsl(344deg 0% 88%) 3%,
+  hsl(344deg 0% 85%) 6%,
+  hsl(344deg 0% 82%) 11%,
+  hsl(344deg 0% 79%) 18%,
+  hsl(344deg 0% 76%) 25%,
+  hsl(344deg 0% 72%) 35%,
+  hsl(344deg 0% 69%) 47%,
+  hsl(344deg 0% 66%) 60%,
+  hsl(344deg 0% 63%) 75%,
+  hsl(344deg 0% 60%) 89%,
+  hsl(0deg 0% 57%) 100%
+);    */
 }
 
 @layer utilities {
