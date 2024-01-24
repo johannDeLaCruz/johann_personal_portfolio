@@ -1,7 +1,10 @@
+import Image from "next/image";
 const Bulb = () => {
   return (
-    <div>Bulb</div>
-  )
-}
+    <div>
+      {/* <Image src={} alt="" /> */}
+    </div>
+  );
+};
 
-export default Bulb
+export default Bulb;
