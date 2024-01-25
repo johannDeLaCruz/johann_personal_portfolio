@@ -2,7 +2,7 @@
 import {} from "react-icons/rx";
 import Circles from "@/components/Circles";
 import Bulb from "@/components/Bulb";
-import ServiceSlider from "@/components/ServiceSlider";
+import WorkSlider from "@/components/WorkSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
 const WorkPage = () => {
@@ -19,7 +19,7 @@ const WorkPage = () => {
               exit="hidden"
               className="h2 xl:mt-8 "
             >
-              My Services<span className="text-accent-500">.</span>
+              My Work<span className="text-accent-500">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -42,7 +42,7 @@ const WorkPage = () => {
             className="w-full xl:max-w-[65%]"
           >
             {" "}
-            <ServiceSlider />
+            <WorkSlider />
           </motion.div>
         </div>
       </div>
