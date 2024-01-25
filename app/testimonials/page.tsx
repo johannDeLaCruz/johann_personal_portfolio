@@ -1,3 +1,4 @@
+"use client"
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
