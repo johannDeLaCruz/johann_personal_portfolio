@@ -14,7 +14,7 @@ const socialsData = [
     icon: <RiInstagramLine />,
   },
   { link: "https://github.com/johannDeLaCruz", icon: <RiGithubFill /> },
-  { link: "", icon: <RiTwitterXFill /> },
+  // { link: "", icon: <RiTwitterXFill /> },
   {
     link: "https://www.linkedin.com/in/johann-d-l-cruz/",
     icon: <RiLinkedinFill />,
@@ -28,10 +28,17 @@ const socialsData = [
 ];
 const Socials = () => {
   return (
-    <div className="flex items center gap-x-5 text-h5">
+    <div className="flex items center gap-x-3 md:gap-x-5 text-h5">
       {socialsData.map((item, index) => (
-        <Link href={item.link} key={index} className="hover:text-accent-500 transition-all duration-300">
-          {item.icon}
+        <Link
+          key={index}
+          href={item.link}
+          className="text-primary-500 hover:text-accent-500 transition-all duration-300"
+        >
+          {" "}
+          <div className="border border-primary-300 rounded-full p-2">
+            {item.icon}
+          </div>
         </Link>
       ))}
     </div>
