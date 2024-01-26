@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="w-full h-screen overflow-hidden font-body text-black">
+      <body className="w-full h-screen overflow-hidden font-heading text-black">
         <main>
           <Layout>{children}</Layout>
         </main>
