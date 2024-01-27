@@ -27,7 +27,14 @@ const config: Config = {
       body1: ["clamp(1rem, 0.857rem + 0.357vi, 1.125rem)", "1.5"],
 
       // 19.2px → 21.6px
-      h5: ["clamp(1.2rem, 1.029rem + 0.429vi, 1.35rem)", "1.5"],
+      h5: [
+        "clamp(1.2rem, 1.029rem + 0.429vi, 1.35rem)",
+        {
+          lineHeight: "1em",
+          letterSpacing: "0em",
+          fontWeight: "bold",
+        },
+      ],
 
       // 23.04px → 25.92px
       h4: ["clamp(1.44rem, 1.234rem + 0.514vi, 1.62rem)", "1.5"],
@@ -36,7 +43,14 @@ const config: Config = {
       h3: ["clamp(1.728rem, 1.481rem + 0.617vi, 1.944rem)", "1.5"],
 
       // 33.178px → 37.325px
-      h2: ["clamp(2.074rem, 1.777rem + 0.741vi, 2.333rem)", "1.5"],
+      h2: [
+        "clamp(2.074rem, 1.777rem + 0.741vi, 2.333rem)",
+        {
+          lineHeight: "1em",
+          letterSpacing: "0em",
+          fontWeight: "extrabold",
+        },
+      ],
 
       // 39.813px → 44.79px
       // h1: [
@@ -47,7 +61,7 @@ const config: Config = {
       //     fontWeight: "bold",
       //   },
       // ],
-       /* 47.776px → 53.748px */
+      /* 47.776px → 53.748px */
       h1: [
         "clamp(2.488rem, 2.133rem + 0.889vi, 2.799rem)",
         {
@@ -56,8 +70,8 @@ const config: Config = {
           fontWeight: "bold",
         },
       ],
-    // },
-    /* 57.331px → 64.497px */
+      // },
+      /* 57.331px → 64.497px */
       //    h1: [
       //   "clamp(3.583rem, 3.071rem + 1.28vi, 4.031rem)",
       //   {
