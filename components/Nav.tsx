@@ -1,28 +1,23 @@
 "use client";
 import Link from "next/link";
-import {
-  GoHomeFill,
-  GoPersonFill,
-  GoHeartFill,
-  GoStarFill,
-  GoBellFill,
-  GoBookmarkFill,
-} from "react-icons/go";
+import { GoPersonFill, GoHeartFill } from "react-icons/go";
+import { HiEnvelope, HiMiniPaintBrush } from "react-icons/hi2";
+import { FaThList, FaHome } from "react-icons/fa";
 
 import { usePathname } from "next/navigation";
 
 export const navData = [
-  { name: "home", path: "/", icon: <GoHomeFill /> },
+  { name: "home", path: "/", icon: <FaHome /> },
   { name: "about", path: "/about", icon: <GoPersonFill /> },
   {
     name: "services",
     path: "/services",
-    icon: <GoBookmarkFill />,
+    icon: <FaThList />,
   },
   {
     name: "work",
     path: "/work",
-    icon: <GoStarFill />,
+    icon: <HiMiniPaintBrush />,
   },
   {
     name: "testimonials",
@@ -32,7 +27,7 @@ export const navData = [
   {
     name: "contact",
     path: "/contact",
-    icon: <GoBellFill />,
+    icon: <HiEnvelope />,
   },
 ];
 
@@ -52,7 +47,7 @@ const Nav = () => {
           >
             <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
               <div className="bg-primary-400/30 relative p-2 flex items-center rounded-[3px]">
-                <span className="text-body2 text-black leading-none font-semibold capitalize">
+                <span className="font-body text-body2 text-primary-500 leading-none font-semibold uppercase">
                   {link.name}
                 </span>
                 {/* <div className="border-solid border-l-primary-400/30 border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div> */}

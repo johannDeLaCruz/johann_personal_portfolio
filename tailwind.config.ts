@@ -39,14 +39,33 @@ const config: Config = {
       h2: ["clamp(2.074rem, 1.777rem + 0.741vi, 2.333rem)", "1.5"],
 
       // 39.813px → 44.79px
+      // h1: [
+      //   "clamp(2.488rem, 2.133rem + 0.889vi, 2.799rem)",
+      //   {
+      //     lineHeight: "1.2em",
+      //     letterSpacing: "0em",
+      //     fontWeight: "bold",
+      //   },
+      // ],
+       /* 47.776px → 53.748px */
       h1: [
         "clamp(2.488rem, 2.133rem + 0.889vi, 2.799rem)",
         {
           lineHeight: "1.2em",
           letterSpacing: "0em",
-          fontWeight: "normal",
+          fontWeight: "bold",
         },
       ],
+    // },
+    /* 57.331px → 64.497px */
+      //    h1: [
+      //   "clamp(3.583rem, 3.071rem + 1.28vi, 4.031rem)",
+      //   {
+      //     lineHeight: "1.2em",
+      //     letterSpacing: "0em",
+      //     fontWeight: "normal",
+      //   },
+      // ],
     },
     screens: {
       sm: "640px",

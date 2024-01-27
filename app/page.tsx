@@ -1,15 +1,15 @@
 "use client";
-// import Image from "next/image";
 import Avatar from "@/components/Avatar";
 import ProjectsButton from "@/components/ProjectsButton";
+import ParticlesContainer from "@/components/ParticlesContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utilities/variants";
 
 const HomePage = () => {
   return (
     <div className="h-full">
-      <div className="w-full h-full">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+      <div className="h-full w-full">
+        <div className="text-center flex flex-col xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -17,14 +17,16 @@ const HomePage = () => {
             exit="hidden"
             className="text-h1 mb-8"
           >
-            Hello, I&apos;m <span className="text-accent-500">Johann.</span>
+            Hello, I&apos;m <span className="text-accent-500">Johann</span>.{" "}
+            <br />
+            Full Stack <span className="text-accent-500">WebDev</span>.
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-body1 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="text-body1 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-10"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
             accusamus optio nostrum error modi esse numquam quos nam
@@ -44,9 +46,9 @@ const HomePage = () => {
           </motion.div>
         </div>
       </div>
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
-        <div className="bg-none xl>bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div>
-        <div>Particles</div>
+      <div className="w-[1200px] h-full absolute right-0 bottom-0 -z-50">
+        {/* <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div> */}
+        <ParticlesContainer />
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"

@@ -2,7 +2,7 @@ import Link from "next/link";
 import {
   RiInstagramLine,
   RiGithubFill,
-  RiTwitterXFill,
+  // RiTwitterXFill,
   RiLinkedinFill,
   RiWhatsappLine,
   RiFacebookCircleFill,

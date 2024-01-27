@@ -11,9 +11,9 @@ const Layout = ({
 }>) => {
   const pathname = usePathname();
   return (
-    <>
-      <Header />
+    <div className="page text-black bg-cover bg-no-repeat relative">      
       <Nav />
+      <Header />
       <AnimatePresence mode="wait">
         <motion.div className="h-full" key={pathname}>
           {" "}
@@ -21,7 +21,7 @@ const Layout = ({
           {children}
         </motion.div>
       </AnimatePresence>
-    </>
+    </div>
   );
 };
 
