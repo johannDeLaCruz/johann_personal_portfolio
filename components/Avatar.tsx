@@ -1,13 +1,15 @@
 import Image from "next/image";
+import TechCircle from "@/components/TechCircle";
 const Avatar = () => {
   return (
-    <div className="hidden xl:flex xl:max-w-none">
+    <div className="hidden xl:flex xl:max-w-none relative">
+      <TechCircle />
       <Image
         src={"/avatar.png"}
-        width={737}
-        height={678}
+        width={500}
+        height={500}
         alt="avatar"
-        className="translate-z-0 w-full h-full"
+        className="w-full h-full"
       />
     </div>
   );

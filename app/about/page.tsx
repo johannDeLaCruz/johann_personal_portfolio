@@ -212,7 +212,7 @@ const AboutPage = () => {
                   {item.icons?.map((icon, iconIndex) => (
                     <div
                       key={iconIndex}
-                      className="text-h5 transition-all duration-500"
+                      className="text-primary-500 text-h5 transition-all duration-500"
                     >
                       {icon}
                     </div>
