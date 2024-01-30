@@ -47,7 +47,7 @@ const Nav = () => {
           >
             <div className="absolute pr-14 right-0 hidden xl:group-hover:flex">
               <div className="bg-primary-400/30 relative p-2 flex items-center rounded-[3px]">
-                <span className="font-body text-body2 text-primary-500 leading-none font-semibold uppercase">
+                <span className="font-body text-body2 text-accent-500 leading-none font-semibold uppercase">
                   {link.name}
                 </span>
                 {/* <div className="border-solid border-l-primary-400/30 border-l-8 border-y-transparent border-y-[6px] border-r-0 absolute -right-2"></div> */}

@@ -1,33 +1,77 @@
-import { SiNextdotjs } from "react-icons/si";
-import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiRedux,
+  SiTailwindcss,
+  SiMongodb,
+  SiFireship,
+  SiWebpack,
+  SiEslint,
+  SiRedis,
+  SiExpress,
+} from "react-icons/si";
+import {
+  FaCss3Alt,
+  FaHtml5,
+  FaReact,
+  FaSass,
+  FaBootstrap,
+  FaNodeJs,
+  FaGit,
+  FaFigma,
+  FaNpm,
+  FaWordpress,
+} from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { TbBrandVscode } from "react-icons/tb";
 
+type Icon = {
+  icon: JSX.Element;
+};
 
+const techIcons: Icon[] = [
+  { icon: <SiNextdotjs /> },
+  { icon: <SiRedux /> },
+  { icon: <SiTailwindcss /> },
+  { icon: <SiMongodb /> },
+  { icon: <SiFireship /> },
+  { icon: <SiWebpack /> },
+  { icon: <SiEslint /> },
+  { icon: <SiRedis /> },
+  { icon: <SiExpress /> },
+  { icon: <FaCss3Alt /> },
+  { icon: <FaHtml5 /> },
+  { icon: <FaReact /> },
+  { icon: <FaSass /> },
+  { icon: <FaBootstrap /> },
+  { icon: <FaNodeJs /> },
+  { icon: <FaGit /> },
+  { icon: <FaFigma /> },
+  { icon: <FaNpm /> },
+  { icon: <IoLogoJavascript /> },
+  { icon: <TbBrandVscode /> },
+  { icon: <FaWordpress /> },
+];
 
 const TechCircle = () => {
+  const radius = 250; // Half of the diameter
+  const iconCount = techIcons.length;
+  const angleIncrement = (2 * Math.PI) / iconCount;
+
   return (
-    <svg
-      viewBox="0 0 200 200"
-      xmlns="http://www.w3.org/2000/svg"
-      className="absolute"
-    >
-      <path
-        d="
-          M 100, 100
-          m -75, 0
-          a 75,75 0 1,0 150,0
-          a 75,75 0 1,0 -150,0"
-        id="path-circle"
-        fill="none"
-      />
-       {" "}
-      <text>
-           {" "}
-        <textPath href="#path-circle">
-          round and round and round and round and round and round and round    {" "}
-        </textPath>
-         {" "}
-      </text>
-    </svg>
+    <div className="absolute w-[500px] h-[500px]">
+      {techIcons.map((tech, index) => (
+        <div
+          key={index}
+          className="absolute -translate-x-1/2 -translate-y-1/2 text-h3 text-accent-500"
+          style={{
+            left: radius * Math.cos(index * angleIncrement) + radius,
+            top: radius * Math.sin(index * angleIncrement) + radius,
+          }}
+        >
+          {tech.icon}
+        </div>
+      ))}
+    </div>
   );
 };
 
