@@ -17,7 +17,7 @@ const ServicesPage = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-h1 mb-4"
+              className="text-h1 font-body mb-4"
             >
               My Services<span className="text-accent-500">.</span>
             </motion.h2>

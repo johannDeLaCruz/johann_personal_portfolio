@@ -111,7 +111,7 @@ const AboutPage = () => {
       <div className="container h-full mx-auto flex flex-col items-center xl:flex-row">
         <div className="flex flex-1 flex-col justify-center">
           <motion.h2
-            className="text-h1 mb-4"
+            className="text-h1 font-body mb-4"
             variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"

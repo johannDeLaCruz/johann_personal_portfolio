@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
 const WorkPage = () => {
   return (
-    <div className="h-full bg-primary-500/30 py-36 flex items-center">
+    <div className="h-full py-36 flex items-center">
       {/* <Circles /> */}
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -17,7 +17,7 @@ const WorkPage = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8 "
+              className="text-h1 font-body mb-4"
             >
               My Work<span className="text-accent-500">.</span>
             </motion.h2>
