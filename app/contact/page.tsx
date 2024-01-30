@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Circles from "@/components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
@@ -30,9 +30,9 @@ const ContactPage = () => {
             </div>
             <input type="text" placeholder="subject" className="input" />
             <textarea placeholder="message" className="textarea"></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent-500 group">
-              <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let&apos;s talk
+            <button className="btn rounded-full border-2 border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent-500 group">
+              <span className="text-h5 font-body group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
+                Let&apos;s <span className="text-accent-500">talk</span>
               </span>
               <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-100 absolute text-[22px]" />
             </button>

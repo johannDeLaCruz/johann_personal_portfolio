@@ -33,10 +33,10 @@ const Socials = () => {
         <Link
           key={index}
           href={item.link}
-          className="text-primary-500 hover:text-accent-500 transition-all duration-300"
+          className="text-primary-500 hover:text-accent-500"
         >
           {" "}
-          <div className="border border-primary-300 rounded-full p-2">
+          <div className="border border-primary-300 hover:border-accent-500 rounded-full p-2">
             {item.icon}
           </div>
         </Link>
