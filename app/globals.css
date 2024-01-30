@@ -32,7 +32,7 @@
 
 @layer base {
   body {
-    @apply bg-primary-100 overflow-hidden leading-relaxed;
+    @apply bg-site bg-cover bg-primary-300 bg-blend-overlay overflow-hidden leading-relaxed;
   }
   .page {
     @apply w-full h-screen overflow-hidden;

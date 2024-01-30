@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
 import Transition from "@/components/Transition";
+import ParticlesContainer from "@/components/ParticlesContainer";
 
 type Props = {
   children: JSX.Element;
@@ -19,6 +20,7 @@ const Layout = ({ children }: Props) => {
         <motion.div className="h-full" key={pathname}>
           {" "}
           <Transition />
+          <ParticlesContainer />
           {children}
         </motion.div>
       </AnimatePresence>
