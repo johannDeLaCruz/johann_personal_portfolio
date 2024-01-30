@@ -4,14 +4,15 @@ import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
 import Transition from "@/components/Transition";
-const Layout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
+
+type Props = {
+  children: JSX.Element;
+};
+
+const Layout = ({ children }: Props) => {
   const pathname = usePathname();
   return (
-    <div className="page text-black xl:bg-explosion xl:bg-[length:1400px_788px] xl:bg-right-bottom xl:bg-no-repeat xl:relative">      
+    <div className="page text-black">
       <Nav />
       <Header />
       <AnimatePresence mode="wait">

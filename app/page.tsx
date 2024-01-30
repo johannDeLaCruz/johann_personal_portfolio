@@ -8,8 +8,8 @@ import { fadeIn } from "@/utilities/variants";
 const HomePage = () => {
   return (
     <div className="h-full">
-      <div className="h-full w-full">
-        <div className="text-center flex flex-col xl:justify-center xl:text-left h-full container mx-auto  xl:pt-40 pt-64">
+      <div className="h-full w-full relative z-20">
+        <div className="text-center flex flex-col xl:justify-center xl:text-left h-full container mx-auto xl:pt-40 pt-64">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
-        {/* <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0"></div> */}
+        <div className="bg-none xl:bg-explosion xl:bg-right-bottom xl:bg-no-repeat w-full h-full absolute xl:bg-[length:1400px_788px]"></div>
         <ParticlesContainer />
         <motion.div
           variants={fadeIn("up", 0.5)}

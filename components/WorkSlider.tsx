@@ -10,11 +10,11 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "TechHub",
           path: "/thumb1.jpg",
         },
         {
-          title: "title",
+          title: "Lummus Productions",
           path: "/thumb2.jpg",
         },
         {

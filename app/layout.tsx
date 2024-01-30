@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Layout from "@/components/Layout";
+import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Johann De La Cruz",
-  description: "Full-stack web developer",
+  description: "Full-stack Web Developer",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+type Props = {
+  children: JSX.Element;
+};
+
+const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
       <body className="w-full h-screen overflow-hidden font-heading text-black">
@@ -21,4 +22,6 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
