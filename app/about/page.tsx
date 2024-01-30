@@ -107,7 +107,7 @@ const aboutData: AboutData[] = [
 const AboutPage = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full text-center xl:text-left">
+    <div className="h-full text-center xl:text-left xl:pt-40 pt-64">
       {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"

@@ -1,17 +1,17 @@
 "use client";
 import {} from "react-icons/rx";
-import Circles from "@/components/Circles";
+// import Circles from "@/components/Circles";
 import Bulb from "@/components/Bulb";
 import WorkSlider from "@/components/WorkSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
 const WorkPage = () => {
   return (
-    <div className="h-full py-36 flex items-center">
+    <div className="h-full flex items-center xl:pt-40 pt-64">
       {/* <Circles /> */}
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex justify-center xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"
@@ -26,7 +26,7 @@ const WorkPage = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[480px] mx-auto lg>:mx-0"
+              className="text-body1 mb-4 max-w-[480px] mx-auto lg>:mx-0"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime voluptas? Minus culpa quod deserunt aperiam reiciendis

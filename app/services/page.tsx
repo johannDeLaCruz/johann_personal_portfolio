@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
 const ServicesPage = () => {
   return (
-    <div className="h-full flex lg:items-center xl:justify-center">
+    <div className="h-full flex lg:items-center xl:pt-40 pt-64">
       {/* <Circles /> */}
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">

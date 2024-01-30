@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="h-full">
       <div className="h-full w-full">
-        <div className="text-center flex flex-col xl:justify-center xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col xl:justify-center xl:text-left h-full container mx-auto  xl:pt-40 pt-64">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
