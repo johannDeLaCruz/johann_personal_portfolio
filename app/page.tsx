@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="h-full">
       <div className="h-full w-full">
-        <div className="text-center flex flex-col xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col pt-10 xl:pt-40 xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -26,7 +26,7 @@ const HomePage = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="text-body1 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-10"
+            className="text-body1 max-w-sm xl:max-w-lg mx-auto xl:mx-0 mb-10 xl:mb-10"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
             accusamus optio nostrum error modi esse numquam quos nam

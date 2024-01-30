@@ -141,7 +141,7 @@ const AboutPage = () => {
             <div className="flex xl:gap-x-6 divide-x divide-primary-400/50">
               <div className="relative flex-1">
                 <div className="font-body text-h5 xl:text-h2 font-extrabold text-accent-500 mb-2">
-                  <CountUp start={0} end={10} duration={10} />
+                  <CountUp start={0} end={10} duration={4} />
                 </div>
                 <div className="font-body text-small uppercase trancking-[1px] leading-[1.4] max-w-[100px]">
                   Years of Experience
@@ -149,7 +149,7 @@ const AboutPage = () => {
               </div>{" "}
               <div className="relative flex-1 pl-4">
                 <div className="font-body text-h5 xl:text-h2 font-extrabold text-accent-500 mb-2">
-                  <CountUp start={0} end={10} duration={10} />
+                  <CountUp start={0} end={10} duration={5} />
                 </div>
                 <div className="font-body text-small uppercase trancking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied Clients
@@ -157,7 +157,7 @@ const AboutPage = () => {
               </div>{" "}
               <div className="relative flex-1 pl-4">
                 <div className="font-body text-h5 xl:text-h2 font-extrabold text-accent-500 mb-2">
-                  <CountUp start={0} end={10} duration={10} />
+                  <CountUp start={0} end={10} duration={6} />
                 </div>
                 <div className="font-body text-small uppercase trancking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
@@ -165,7 +165,7 @@ const AboutPage = () => {
               </div>{" "}
               <div className="relative flex-1 pl-4">
                 <div className="font-body text-h5 xl:text-h2 font-extrabold text-accent-500 mb-2">
-                  <CountUp start={0} end={10} duration={10} />
+                  <CountUp start={0} end={10} duration={7} />
                 </div>
                 <div className="font-body text-small uppercase trancking-[1px] leading-[1.4] max-w-[100px]">
                   Winning Awards

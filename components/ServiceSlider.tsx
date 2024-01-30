@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -52,16 +53,20 @@ const ServiceSlider = () => {
     >
       {serviceData.map((item, index) => (
         <SwiperSlide key={index}>
-          <div className="bg-primary-500 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:white transition-all duration-300">
-            <div className="text-h4 text-accent-500 mb-4 ">{item.icon}</div>
-            <div className="mb-8">
-              <div className="mb-2 text-h4">{item.title}</div>
-              <p className="max-w-[350px] leading-normal">{item.description}</p>
+          <Link href={"/contact"}>
+            <div className="bg-primary-300 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:white transition-all duration-300">
+              <div className="text-h4 text-accent-500 mb-4 ">{item.icon}</div>
+              <div className="mb-8">
+                <div className="mb-2 text-h4 bold">{item.title}</div>
+                <p className="max-w-[350px] leading-normal">
+                  {item.description}
+                </p>
+              </div>
+              <div className="text-h4">
+                <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent-500 transition-all duration-300" />
+              </div>
             </div>
-            <div className="text-h4">
-              <RxArrowTopRight className="group-hover:rotate-45 group-hover:text-accent-500 transition-all duration-300" />
-            </div>
-          </div>
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>

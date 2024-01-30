@@ -1,20 +1,21 @@
+"use client"
 import Circles from "@/components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utilities/variants";
 const ContactPage = () => {
   return (
-    <div className="h-full bg-primary-500/30">
-      <div className=" container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
-        <div className="flex flex-col w-full max-w-[700px] bg-primary-500/10">
+    <div className="h-full">
+      <div className="container mx-auto xl:py-32 pt-8 text-center xl:text-left flex xl:items-center justify-center h-full">
+        <div className="flex flex-col w-full max-w-[700px] bg-primary-500/20 p-12">
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
+            className="text-h1 font-body text-center mb-12"
           >
-            Let&lsquo;s <span className="text-accent-500">connect!</span>
+            Let&apos;s <span className="text-accent-500">connect!</span>
           </motion.h2>
           <motion.form
             variants={fadeIn("up", 0.4)}

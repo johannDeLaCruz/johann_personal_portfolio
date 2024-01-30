@@ -53,12 +53,12 @@ const techIcons: Icon[] = [
 ];
 
 const TechCircle = () => {
-  const radius = 250; // Half of the diameter
+  const radius = 225; // Half of the diameter
   const iconCount = techIcons.length;
   const angleIncrement = (2 * Math.PI) / iconCount;
 
   return (
-    <div className="absolute w-[500px] h-[500px]">
+    <div className="absolute w-[450px] h-[450px] -top-16 right-6 animate-spin-slow">
       {techIcons.map((tech, index) => (
         <div
           key={index}

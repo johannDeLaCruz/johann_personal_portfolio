@@ -138,7 +138,7 @@ const config: Config = {
       site: 'url("/site-bg.svg")',
     },
     animation: {
-      "spin-slow": "spin 6s linear infinite",
+      "spin-slow": "spin 15s linear infinite",
     },
   },
   container: {

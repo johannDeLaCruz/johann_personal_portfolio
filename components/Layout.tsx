@@ -11,7 +11,7 @@ const Layout = ({
 }>) => {
   const pathname = usePathname();
   return (
-    <div className="page text-black bg-explosion bg-[length:1400px_788px] bg-right-bottom bg-no-repeat relative">      
+    <div className="page text-black xl:bg-explosion xl:bg-[length:1400px_788px] xl:bg-right-bottom xl:bg-no-repeat xl:relative">      
       <Nav />
       <Header />
       <AnimatePresence mode="wait">

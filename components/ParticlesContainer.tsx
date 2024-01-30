@@ -22,7 +22,7 @@ const ParticlesContainer = () => {
     () => ({
       particles: {
         number: {
-          value: 120, // Adjust the number of particles as needed
+          value: 150, // Adjust the number of particles as needed
         },
         color: {
           value: "#8c8c8c", // Smoke color
@@ -31,7 +31,7 @@ const ParticlesContainer = () => {
           type: "circle", // You can use "circle" or "triangle" for a basic smoke shape
         },
         opacity: {
-          value: 0.2, // Adjust the opacity to control the density of the smoke
+          value: 0.4, // Adjust the opacity to control the density of the smoke
           animation: {
             enable: true,
             speed: 0.1,
@@ -40,7 +40,7 @@ const ParticlesContainer = () => {
           },
         },
         size: {
-          value: 4, // Adjust the size of smoke particles
+          value: 2, // Adjust the size of smoke particles
           random: true, // Randomize particle sizes for a more natural look
           animation: {
             enable: true,
@@ -52,7 +52,7 @@ const ParticlesContainer = () => {
         move: {
           enable: true,
           direction: "none", // Make particles move randomly
-          speed: 1, // Adjust the speed of particle movement
+          speed: 0.5, // Adjust the speed of particle movement
           outMode: "out", // Define how particles behave when they move out of the canvas
         },
       },
