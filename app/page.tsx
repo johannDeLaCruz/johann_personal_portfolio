@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div className="h-full">
       <div className="h-full w-full">
-        <div className="text-center flex flex-col pt-10 xl:pt-40 xl:text-left h-full container mx-auto">
+        <div className="text-center flex flex-col xl:justify-center xl:text-left h-full container mx-auto">
           <motion.h1
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -17,9 +17,10 @@ const HomePage = () => {
             exit="hidden"
             className="text-h1 font-body mb-4"
           >
-            Hello, I&apos;m <span className="text-accent-500">Johann</span>.{" "}
+            Hello, It&apos;s Johann <span className="text-accent-500">.</span>{" "}
             <br />
-            Full Stack <span className="text-accent-500">WebDev</span>.
+            I&apos;m a Full Stack WebDev
+            <span className="text-accent-500">.</span>
           </motion.h1>
           <motion.p
             variants={fadeIn("down", 0.3)}
