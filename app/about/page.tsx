@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { fadeIn } from "../../utilities/variants.js";
-import Avatar from "@/components/Avatar";
+// import Avatar from "@/components/Avatar";
 import { useState } from "react";
 import {
   FaHtml5,
@@ -20,7 +20,16 @@ import {
   SiAdobephotoshop,
 } from "react-icons/si";
 
-const aboutData = [
+type AboutData = {
+  title: string;
+  info: {
+    title: string;
+    icons?: JSX.Element[];
+    stage?: string;
+  }[];
+};
+
+const aboutData: AboutData[] = [
   {
     title: "skills",
     info: [
@@ -99,7 +108,7 @@ const AboutPage = () => {
   const [index, setIndex] = useState(0);
   return (
     <div className="h-full text-center xl:text-left">
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -107,9 +116,9 @@ const AboutPage = () => {
         className="hidden xl:flex absolute bottom-0 -left-[378px]"
       >
         <Avatar />
-      </motion.div>
+      </motion.div> */}
       <div className="container h-full mx-auto flex flex-col items-center xl:flex-row">
-        <div className="flex flex-1 flex-col justify-center">
+        <div className="flex flex-1 flex-col lg:justify-center ">
           <motion.h2
             className="text-h1 font-body mb-4"
             variants={fadeIn("right", 0.2)}
@@ -125,11 +134,11 @@ const AboutPage = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            className="text-body1 max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             10 years ago, I began freelancing as a developer. Since then
-            I`&apos;`ve done remote work for agencies, consulted for startups,
-            and colaoborated on fdigital products for business and consumer use.
+            I&apos;ve done remote work for agencies, consulted for startups, and
+            colaoborated on fdigital products for business and consumer use.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -182,7 +191,7 @@ const AboutPage = () => {
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8">
-            {aboutData.map((item, itemIndex) => (              
+            {aboutData.map((item, itemIndex) => (
               <div
                 key={itemIndex}
                 className={`${
@@ -194,7 +203,7 @@ const AboutPage = () => {
               >
                 <div className="font-body text-h5">{item.title}</div>
                 {/* <div className="hidden md:flex">-</div> */}
-                <div>{item.stage}</div>
+                {/* <div>{item?.info[itemIndex]?.stage}</div> */}
                 <div className="flex gap-x-4"></div>
               </div>
             ))}

@@ -49,12 +49,12 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[340px]"
+      className="h-[240px] sm:h-[340px] swiper-horizontal"
     >
       {serviceData.map((item, index) => (
         <SwiperSlide key={index}>
           <Link href={"/contact"}>
-            <div className="bg-primary-200 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-white transition-all duration-300">
+            <div className="bg-primary-300/10 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-white transition-all duration-300">
               <div className="text-h4 text-accent-500 mb-4 ">{item.icon}</div>
               <div className="mb-8">
                 <div className="mb-2 text-h4 bold">{item.title}</div>

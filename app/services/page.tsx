@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
 const ServicesPage = () => {
   return (
-    <div className="h-full pt-10 xl:py-36 flex items-center">
+    <div className="h-full flex lg:items-center xl:justify-center">
       {/* <Circles /> */}
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -26,7 +26,7 @@ const ServicesPage = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-body1 mb-4 max-w-[480px] mx-auto lg>:mx-0"
+              className="text-body1 mb-4 max-w-[480px] mx-auto lg:mx-0"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime voluptas? Minus culpa quod deserunt aperiam reiciendis
