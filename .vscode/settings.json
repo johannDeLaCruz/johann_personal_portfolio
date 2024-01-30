@@ -17,6 +17,7 @@
         "avatar",
         "home",
         "circle",
-        "socials"
+        "socials",
+        "header"
     ]
 }

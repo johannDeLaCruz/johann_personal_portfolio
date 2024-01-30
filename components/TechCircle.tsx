@@ -62,7 +62,7 @@ const TechCircle = () => {
       {techIcons.map((tech, index) => (
         <div
           key={index}
-          className="absolute -translate-x-1/2 -translate-y-1/2 text-h3 text-accent-500"
+          className="absolute -translate-x-1/2 -translate-y-1/2 text-h3 text-accent-500/90"
           style={{
             left: radius * Math.cos(index * angleIncrement) + radius,
             top: radius * Math.sin(index * angleIncrement) + radius,

@@ -57,7 +57,7 @@ const ServiceSlider = () => {
             <div className="bg-primary-300/10 h-max rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-white transition-all duration-300">
               <div className="text-h4 text-accent-500 mb-4 ">{item.icon}</div>
               <div className="mb-8">
-                <div className="mb-2 text-h4 bold">{item.title}</div>
+                <div className="mb-2 text-h4 font-body font-bold">{item.title}</div>
                 <p className="max-w-[350px] leading-normal">
                   {item.description}
                 </p>
