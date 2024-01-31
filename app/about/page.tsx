@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { fadeIn } from "../../utilities/variants.js";
-// import Avatar from "@/components/Avatar";
 import { useState } from "react";
 import {
   FaHtml5,
@@ -125,6 +124,7 @@ const AboutPage = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
+            key={"about-header"}
           >
             Captivating <span className="text-accent-500">stories</span> birth
             magnificent designs.
@@ -135,6 +135,7 @@ const AboutPage = () => {
             animate="show"
             exit="hidden"
             className="text-body1 max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
+            key={"about-p"}
           >
             10 years ago, I began freelancing as a developer. Since then
             I&apos;ve done remote work for agencies, consulted for startups, and
@@ -146,6 +147,7 @@ const AboutPage = () => {
             animate="show"
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            key={"about-buttons"}
           >
             <div className="flex xl:gap-x-6 divide-x divide-primary-400/50">
               <div className="relative flex-1">
@@ -189,6 +191,7 @@ const AboutPage = () => {
           animate="show"
           exit="hidden"
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          key={"about-image"}
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8">
             {aboutData.map((item, itemIndex) => (

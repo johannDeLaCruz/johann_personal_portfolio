@@ -23,8 +23,9 @@ const Transition = () => {
         variants={transitionVariants}
         initial="initial"
         animate="animate"
-        exit="exit"
+        exit="exit"        
         transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+        key={"firstLayer"}
       ></motion.div>{" "}
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-[50] bg-primary-200"
@@ -33,6 +34,7 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
+        key={"secondLayer"}
       ></motion.div>{" "}
       <motion.div
         className="fixed top-0 bottom-0 right-full w-screen h-screen z-[40] bg-primary-100"
@@ -41,6 +43,7 @@ const Transition = () => {
         animate="animate"
         exit="exit"
         transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
+        key={"thirdLayer"}
       ></motion.div>
     </>
   );

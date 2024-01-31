@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Layout from "@/components/Layout";
-import { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Johann De La Cruz",
