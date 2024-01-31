@@ -1,4 +1,3 @@
-// "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -58,7 +57,7 @@ const TestimonialSlider = () => {
               <div className="mb-4">
                 <FaQuoteLeft className="text-h4 xl:text-h1 text-primary-500 mx-auto md:mx-0" />
               </div>
-              <div className="xl:text-h5 text-center md:text-left">
+              <div className="xl:text-body1 text-center md:text-left">
                 {person.message}
               </div>
             </div>

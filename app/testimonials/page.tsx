@@ -1,11 +1,11 @@
-"use client"
+"use client";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
 
 const TestimonialsPage = () => {
   return (
-    <div className="h-full bg-primary-300/30 xl:pt-40 pt-64 text-center">
+    <div className="h-full flex lg:items-center xl:pt-40 pt-64 text-center">
       <div className="container mx-auto flex flex-col xl: justify-center">
         <motion.h2
           variants={fadeIn("up", 0.2)}

@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Header from "@/components/Header";
 import Nav from "@/components/Nav";
 import Transition from "@/components/Transition";
+import TopLeftImage from "@/components/TopLeftImage";
 import ParticlesContainer from "@/components/ParticlesContainer";
 
 type Props = {
@@ -23,8 +24,7 @@ const Layout = ({ children }: Props) => {
           <Header />
         </motion.div>
         <div className="h-full w-full absolute right-0 top-0 z-20">
-          {" "}
-          {children}
+          <TopLeftImage /> {children}
         </div>
       </AnimatePresence>
     </div>
