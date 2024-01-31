@@ -21,11 +21,11 @@ const Layout = ({ children }: Props) => {
           <ParticlesContainer />
           <Nav />
           <Header />
+          <div className="h-full w-full absolute right-0 top-0 z-20">
+            {" "}
+            {children}
+          </div>
         </motion.div>
-        <div className="h-full w-full absolute right-0 top-0 z-20">
-          {" "}
-          {children}
-        </div>
       </AnimatePresence>
     </div>
   );
