@@ -1,7 +1,6 @@
 "use client";
 import Avatar from "@/components/Avatar";
 import ProjectsButton from "@/components/ProjectsButton";
-import ParticlesContainer from "@/components/ParticlesContainer";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utilities/variants";
 
@@ -49,8 +48,7 @@ const HomePage = () => {
       </div>
       <div className="w-[1200px] h-full absolute right-0 bottom-0">
         <div className="bg-none xl:bg-explosion xl:bg-right-bottom xl:bg-no-repeat w-full h-full absolute xl:bg-[length:1400px_788px]"></div>
-        {/* <ParticlesContainer /> */}
-        <motion.div
+              <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
           animate="show"

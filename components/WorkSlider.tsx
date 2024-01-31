@@ -11,19 +11,19 @@ const workSlides = {
       images: [
         {
           title: "TechHub",
-          path: "/thumb1.jpg",
+          path: "/thumb-1.jpg",
         },
         {
           title: "Lummus Productions",
-          path: "/thumb2.jpg",
+          path: "/thumb-2.jpg",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/thumb-3.jpg",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/thumb-4.jpg",
         },
       ],
     },
@@ -31,19 +31,19 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/thumb-5.jpg",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/thumb-6.jpg",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/thumb-7.jpg",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/thumb-8.jpg",
         },
       ],
     },

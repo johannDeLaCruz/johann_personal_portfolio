@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import Link from "next/link";
 import { GoPersonFill, GoHeartFill } from "react-icons/go";
 import { HiEnvelope, HiMiniPaintBrush } from "react-icons/hi2";
