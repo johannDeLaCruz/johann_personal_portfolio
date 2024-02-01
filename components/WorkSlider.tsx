@@ -104,7 +104,7 @@ const WorkSlider = () => {
             {slide.images.map((image, index) => (
               <div
                 key={index}
-                className="relative rounded-lg overflow-hidden flex items-center justify-center group bg-primary-300/40 backdrop-blur-sm"
+                className="relative rounded-lg flex items-center justify-center group bg-primary-300/40 backdrop-blur-sm"
               >
                 <div className="flex items-center justify-center relative overflow-hidden group">
                   <Image alt="" src={image.path} width={500} height={300} />

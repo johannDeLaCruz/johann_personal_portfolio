@@ -54,19 +54,19 @@ const aboutData: AboutData[] = [
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
@@ -106,17 +106,8 @@ const aboutData: AboutData[] = [
 const AboutPage = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full text-center xl:text-left xl:pt-40 pt-64">
-      {/* <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[378px]"
-      >
-        <Avatar />
-      </motion.div> */}
-      <div className="container h-full mx-auto flex flex-col items-center xl:flex-row">
+    <div className="xl:h-full text-center xl:text-left xl:pt-40 pt-64 xl:pb-0 pb-32">
+      <div className="xl:h-full container mx-auto flex flex-col items-center xl:flex-row">
         <div className="flex flex-1 flex-col lg:justify-center ">
           <motion.h2
             className="text-h1 font-body mb-4"
@@ -190,7 +181,7 @@ const AboutPage = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col w-full xl:max-w-[48%] xl:h-[480px]"
           key={"about-image"}
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-8">

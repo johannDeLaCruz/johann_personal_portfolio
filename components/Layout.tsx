@@ -14,16 +14,16 @@ type Props = {
 const Layout = ({ children }: Props) => {
   const pathname = usePathname();
   return (
-    <div className="page text-black">
+    <div className="text-black">
       <AnimatePresence mode="wait">
-        <motion.div className="h-full" key={pathname}>
+        <motion.div className="" key={pathname}>
           {" "}
           <Transition />
           <ParticlesContainer />
           <Nav />
           <Header />
         </motion.div>
-        <div className="h-full w-full absolute right-0 top-0 z-20">
+        <div className="w-full h-full absolute right-0 top-0 z-20">
           <TopLeftImage /> {children}
         </div>
       </AnimatePresence>

@@ -14,7 +14,7 @@ type Props = {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body className="w-full h-screen overflow-hidden font-heading text-black">
+      <body className="font-heading text-black">
         <main>
           <Layout>{children}</Layout>
         </main>

@@ -1,5 +1,5 @@
 "use client";
-import {} from "react-icons/rx";
+
 import Bulb from "@/components/Bulb";
 import ServiceSlider from "@/components/ServiceSlider";
 import { motion } from "framer-motion";
@@ -9,7 +9,7 @@ const ServicesPage = () => {
     <div className="h-full flex lg:items-center xl:pt-40 pt-64">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
-          <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
+          <div className="text-center flex justify-center xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
               variants={fadeIn("up", 0.2)}
               initial="hidden"

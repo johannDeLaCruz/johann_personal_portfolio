@@ -5,8 +5,9 @@ import { fadeIn } from "@/utilities/variants";
 import PcImage from "@/components/PcImage";
 const ContactPage = () => {
   return (
-    <div className="h-full">
-      <div className="container mx-auto xl:pt-40 pt-64 text-center xl:text-left flex xl:items-center justify-center h-full">
+    //maybe remove the wrapping div
+    <div className="">
+      <div className="container mx-auto xl:pt-40 pt-64 pb-32 xl:pb-0 text-center xl:text-left flex xl:items-center justify-center">
         <PcImage />
         <div className="flex flex-col w-full max-w-[700px] bg-primary-500/20 p-12 rounded-lg">
           <motion.h2

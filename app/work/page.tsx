@@ -1,9 +1,9 @@
 "use client";
-import {} from "react-icons/rx";
-import Bulb from "@/components/Bulb";
+
 import WorkSlider from "@/components/WorkSlider";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utilities/variants";
+
 const WorkPage = () => {
   return (
     <div className="h-full flex lg:items-center xl:pt-40 pt-64">
@@ -24,7 +24,7 @@ const WorkPage = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="text-body1 mb-4 max-w-[480px] mx-auto lg>:mx-0"
+              className="text-body1 mb-4 max-w-[480px] mx-auto lg:mx-0"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
               maxime voluptas? Minus culpa quod deserunt aperiam reiciendis
@@ -43,8 +43,7 @@ const WorkPage = () => {
             <WorkSlider />
           </motion.div>
         </div>
-      </div>
-      <Bulb />
+      </div>      
     </div>
   );
 };

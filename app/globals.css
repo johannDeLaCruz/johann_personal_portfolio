@@ -32,11 +32,9 @@
 
 @layer base {
   body {
-    @apply bg-site bg-cover bg-primary-300 bg-blend-overlay overflow-hidden leading-relaxed;
+    @apply w-full h-full bg-site bg-auto bg-left-top bg-primary-300 bg-no-repeat bg-blend-overlay leading-relaxed;
   }
-  .page {
-    @apply w-full h-screen overflow-hidden;
-  }
+ 
 }
 
 @layer components {
