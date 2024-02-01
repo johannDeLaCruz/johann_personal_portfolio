@@ -2,10 +2,12 @@
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utilities/variants";
+import Circles from "@/components/Circles";
 const ContactPage = () => {
   return (
     <div className="h-full">
       <div className="container mx-auto xl:pt-40 pt-64 text-center xl:text-left flex xl:items-center justify-center h-full">
+        <Circles />
         <div className="flex flex-col w-full max-w-[700px] bg-primary-500/20 p-12 rounded-lg">
           <motion.h2
             variants={fadeIn("up", 0.2)}

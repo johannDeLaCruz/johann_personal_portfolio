@@ -7,6 +7,11 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    extend: {
+      animation: {
+        "spin-slow": "spin 18s linear infinite",
+      },
+    },
     container: {
       padding: {
         DEFAULT: "15px",
@@ -136,9 +141,6 @@ const config: Config = {
       circles: 'url("/bg-circles.png")',
       circleStar: 'url("/circle-star.svg")',
       site: 'url("/site-bg.png")',
-    },
-    animation: {
-      "spin-slow": "spin 18s linear infinite",
     },
   },
   container: {

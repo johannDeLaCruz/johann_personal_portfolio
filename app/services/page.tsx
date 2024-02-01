@@ -1,6 +1,5 @@
 "use client";
 import {} from "react-icons/rx";
-import Circles from "@/components/Circles";
 import Bulb from "@/components/Bulb";
 import ServiceSlider from "@/components/ServiceSlider";
 import { motion } from "framer-motion";
@@ -8,7 +7,6 @@ import { fadeIn } from "../../utilities/variants";
 const ServicesPage = () => {
   return (
     <div className="h-full flex lg:items-center xl:pt-40 pt-64">
-      {/* <Circles /> */}
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
