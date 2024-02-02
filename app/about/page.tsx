@@ -252,8 +252,8 @@ const AboutPage = () => {
                 key={itemIndex}
                 className="flex flex-col xl:flex-row max-w-max gap-x-2 justify-start text-primary-900"
               >
-                <div className="w-32 mx-auto xl:mx-0">
-                  <h4 className="w-32 whitespace-nowrap self-start mb-2 md:mb-0 uppercase font-bold">
+                <div className="xl:w-32 mx-auto xl:mx-0">
+                  <h4 className="xl:w-32 self-start mb-2 md:mb-0 uppercase font-bold">
                     {item.title}
                   </h4>
                 </div>
