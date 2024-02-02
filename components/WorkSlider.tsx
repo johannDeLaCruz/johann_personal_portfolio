@@ -28,24 +28,24 @@ const workSlides: WorkSlides = {
       images: [
         {
           title: "TechHub",
-          path: "/thumb-1.png",
+          path: "/thumb-2.png",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           link: "https://tech-hub-woad.vercel.app",
         },
         {
           title: "Lummus Productions",
-          path: "/thumb-2.png",
+          path: "/thumb-1.png",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           link: "https://lummus-productions.vercel.app",
         },
         {
-          title: "title",
+          title: "Casa De Elna - Restaurant",
           path: "/thumb-3.jpg",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          link: "",
+          link: "https://casa-de-elna-client.vercel.app",
         },
         {
           title: "title",
@@ -56,38 +56,38 @@ const workSlides: WorkSlides = {
         },
       ],
     },
-    {
-      images: [
-        {
-          title: "title",
-          path: "/thumb-5.jpg",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          link: "",
-        },
-        {
-          title: "title",
-          path: "/thumb-6.jpg",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          link: "",
-        },
-        {
-          title: "title",
-          path: "/thumb-7.jpg",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          link: "",
-        },
-        {
-          title: "title",
-          path: "/thumb-8.jpg",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          link: "",
-        },
-      ],
-    },
+    // {
+    //   images: [
+    //     {
+    //       title: "title",
+    //       path: "/thumb-5.jpg",
+    //       description:
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //       link: "",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb-6.jpg",
+    //       description:
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //       link: "",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb-7.jpg",
+    //       description:
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //       link: "",
+    //     },
+    //     {
+    //       title: "title",
+    //       path: "/thumb-8.jpg",
+    //       description:
+    //         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    //       link: "",
+    //     },
+    //   ],
+    // },
   ],
 };
 const WorkSlider = () => {
@@ -96,7 +96,7 @@ const WorkSlider = () => {
       spaceBetween={10}
       pagination={{ clickable: true }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[480px]"
+      className=""
     >
       {workSlides.slides.map((slide, index) => (
         <SwiperSlide key={index}>
@@ -108,7 +108,7 @@ const WorkSlider = () => {
               >
                 <div className="flex items-center justify-center relative overflow-hidden group">
                   <Image alt="" src={image.path} width={500} height={300} />
-                  <div className="absolute inset-0 bg-primary-200 opacity-0 group-hover:opacity-100 transition-all duration-700">
+                  <div className="absolute inset-0 bg-primary-200 opacity-0 group-hover:opacity-100 rounded-lg transition-all duration-700">
                     <div className="absolute top-8 left-5 translate-y-full group-hover:translate-y-1 group-hover:xl:-translate-y-0.5 transition-all duration-300">
                       <div className="flex flex-col">
                         <h2 className="font-body text-body2 font-bold">

@@ -44,7 +44,7 @@ const HomePage = () => {
           <ProjectsButton />
         </motion.div>
       </div>
-      <div className="hidden xl:flex w-[1200px] h-full absolute right-0 bottom-0">
+      <div className="hidden xl:flex w-[1200px] h-full absolute right-0 bottom-0 overflow-hidden">
         <div className="bg-none xl:bg-explosion xl:bg-right-bottom xl:bg-no-repeat w-full h-full absolute xl:bg-[length:1400px_788px]"></div>
         <motion.div
           variants={fadeIn("up", 0.5)}
@@ -52,7 +52,7 @@ const HomePage = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[500px] max-h-[500px] absolute -bottom-32 lg:bottom-0 lg:right-[18%]"
+          className="w-full max-w-[500px] max-h-[500px] absolute -bottom-32 lg:bottom-0 lg:right-[18%]"
         >
           <Avatar />
         </motion.div>
