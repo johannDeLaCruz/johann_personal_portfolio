@@ -3,26 +3,27 @@ import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import { fadeIn } from "../../utilities/variants.js";
 import { useState } from "react";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
+// import {
+//   FaHtml5,
+//   FaCss3,
+//   FaJs,
+//   FaReact,
+//   FaWordpress,
+//   FaFigma,
+// } from "react-icons/fa";
 
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
+// import {
+//   SiNextdotjs,
+//   SiFramer,
+//   SiAdobexd,
+//   SiAdobephotoshop,
+// } from "react-icons/si";
 
 type AboutData = {
   title: string;
   info: {
     title: string;
+    description?: string;
     icons?: JSX.Element[];
     stage?: string;
   }[];
@@ -33,24 +34,56 @@ const aboutData: AboutData[] = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          <FaHtml5 key="html" />,
-          <FaCss3 key="css" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="next" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
-        ],
+        title: "Front-End",
+        description:
+          "HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Framer Motion, GSAP, Redux Toolkit, Tailwind, Bootstrap, MUI, SASS",
+        // icons: [
+        //   <FaHtml5 key="html" />,
+        //   <FaCss3 key="css" />,
+        //   <FaJs key="js" />,
+        //   <FaReact key="react" />,
+        //   <SiNextdotjs key="next" />,
+        //   <SiFramer key="framer" />,
+        //   <FaWordpress key="wordpress" />,
+        // ],
+      },
+      {
+        title: "Back-End",
+        description:
+          "Node.js, Express.js, Prisma, MongoDB, MySQL, Mongoose, Auth.js, Webpack, Redis",
+        // icons: [
+        //   <FaFigma key="figma" />,
+        //   <SiAdobexd key="xd" />,
+        //   <SiAdobephotoshop key="photoshop" />,
+        // ],
+      },
+      {
+        title: "Deployment",
+        description: "Vercel, Firebase, Netlify",
+        // icons: [
+        //   <FaFigma key="figma" />,
+        //   <SiAdobexd key="xd" />,
+        //   <SiAdobephotoshop key="photoshop" />,
+        // ],
+      },
+      {
+        title: "Other",
+        description: "Git, Npm, Visual Studio Code, Emmet, BEM, CUBE CSS",
+        // icons: [
+        //   <FaFigma key="figma" />,
+        //   <SiAdobexd key="xd" />,
+        //   <SiAdobephotoshop key="photoshop" />,
+        // ],
       },
       {
         title: "UI/UX Design",
-        icons: [
-          <FaFigma key="figma" />,
-          <SiAdobexd key="xd" />,
-          <SiAdobephotoshop key="photoshop" />,
-        ],
+        description:
+          "Figma, Adobe Photoshop, Adobe Illustrator, Wordpress, DaVinci Resolve, Microsoft Visio",
+        // icons: [
+        //   <FaFigma key="figma" />,
+        //   <SiAdobexd key="xd" />,
+        //   <SiAdobephotoshop key="photoshop" />,
+        // ],
       },
     ],
   },
@@ -71,34 +104,34 @@ const aboutData: AboutData[] = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Full Stack Web Development Freelancing",
+        stage: "2021 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Wordpress Template Management",
+        stage: "2021 - Present",
       },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
+      // {
+      //   title: "Intern - DEF Corporation",
+      //   stage: "2008 - 2010",
+      // },
     ],
   },
   {
-    title: "credentials",
+    title: "education",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Mimo Bootcamp - Full Stack Web Developer",
+        // stage: "2023",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "freeCodeCamp.org - Full Stack Web Developer",
+        // stage: "2023",
       },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
+      // {
+      //   title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
+      //   stage: "2006",
+      // },
     ],
   },
 ];
@@ -117,8 +150,8 @@ const AboutPage = () => {
             exit="hidden"
             key={"about-header"}
           >
-            Captivating <span className="text-accent-500">stories</span> birth
-            magnificent designs.
+            Visually appealing and innovative solutions
+            <span className="text-accent-500">.</span>
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.2)}
@@ -128,9 +161,9 @@ const AboutPage = () => {
             className="text-body1 max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
             key={"about-p"}
           >
-            10 years ago, I began freelancing as a developer. Since then
-            I&apos;ve done remote work for agencies, consulted for startups, and
-            colaoborated on fdigital products for business and consumer use.
+            I&apos;m currently freelancing as a web developer and I&apos;ve done
+            remote work for agencies and colaborated on digital products for
+            business and consumer use.
           </motion.p>
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -143,7 +176,7 @@ const AboutPage = () => {
             <div className="flex xl:gap-x-6 divide-x divide-primary-400/50">
               <div className="relative flex-1">
                 <div className="font-body text-h5 xl:text-h2 font-extrabold text-accent-500 mb-2">
-                  <CountUp start={0} end={10} duration={4} />
+                  <CountUp start={0} end={2} duration={4} />
                 </div>
                 <div className="font-body text-small uppercase trancking-[1px] leading-[1.4] max-w-[100px]">
                   Years of Experience
@@ -151,7 +184,7 @@ const AboutPage = () => {
               </div>{" "}
               <div className="relative flex-1 pl-4">
                 <div className="font-body text-h5 xl:text-h2 font-extrabold text-accent-500 mb-2">
-                  <CountUp start={0} end={10} duration={5} />
+                  <CountUp start={0} end={20} duration={5} />
                 </div>
                 <div className="font-body text-small uppercase trancking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied Clients
@@ -195,31 +228,33 @@ const AboutPage = () => {
                 } cursor-pointer capitalize xl:text-lg relative after:w-4 after:h-[3px] after:bg-accent-500 after:absolute after:-bottom-2 after:left-0 hover:after:w-[100%] hover:after:transition-all hover:after:duration-300 hover:ease-in-out`}
                 onClick={() => setIndex(itemIndex)}
               >
-                <div className="font-body text-h5">{item.title}</div>
+                <h3 className="font-body text-h5">{item.title}</h3>
                 {/* <div className="hidden md:flex">-</div> */}
                 {/* <div>{item?.info[itemIndex]?.stage}</div> */}
                 <div className="flex gap-x-4"></div>
               </div>
             ))}
           </div>
-          <div className="bg-primary-300/10 py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="bg-primary-300/10 p-2 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info?.map((item, itemIndex) => (
               <div
                 key={itemIndex}
                 className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-primary-500"
               >
-                <div className="mb-2 md:mb-0 lg:indent-6">{item.title}</div>
-                <div className="hidden md:flex">-</div>
+                <h4 className="mb-2 md:mb-0">{item.title}:</h4>
+                {/* <div className="hidden md:flex">-</div> */}
                 <div>{item?.stage}</div>
                 <div className="flex gap-x-4">
-                  {item.icons?.map((icon, iconIndex) => (
+                  <p className="text-primary-500 text-h5 transition-all duration-500"></p>
+                  {item?.description}
+                  {/* {item.icons?.map((icon, iconIndex) => (
                     <div
                       key={iconIndex}
                       className="text-primary-500 text-h5 transition-all duration-500"
                     >
                       {icon}
                     </div>
-                  ))}
+                  ))} */}
                 </div>
               </div>
             ))}

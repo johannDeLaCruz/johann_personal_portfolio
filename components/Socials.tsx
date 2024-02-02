@@ -19,7 +19,7 @@ const socialsData = [
     link: "https://www.linkedin.com/in/johann-d-l-cruz/",
     icon: <RiLinkedinFill />,
   },
-  { link: "", icon: <RiWhatsappLine /> },
+  { link: "https://wa.me/5561983799619/?text=Hello%2C%20I%20would%20like%20to%20talk%20to%20you%20about%20your%20developer%20services!", icon: <RiWhatsappLine /> },
   {
     link: "https://www.facebook.com/johann.s.m.mendez",
     icon: <RiFacebookCircleFill />,

@@ -27,9 +27,9 @@ const HomePage = () => {
           exit="hidden"
           className="text-body1 max-w-sm xl:max-w-lg mx-auto xl:mx-0 mb-10 xl:mb-10"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-          accusamus optio nostrum error modi esse numquam quos nam reprehenderit
-          suscipit ab id aut.
+          I&apos;m currently working with modern web development and design
+          using cutting edge tech and learning all about generative AI. Take a look at
+          my projects in the link below!
         </motion.p>
         <div className="flex justify-center xl:hidden relative pb-24">
           <ProjectsButton />
