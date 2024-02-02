@@ -26,10 +26,9 @@ const ServicesPage = () => {
               exit="hidden"
               className="text-body1 mb-4 max-w-[480px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              maxime voluptas? Minus culpa quod deserunt aperiam reiciendis
-              eveniet asperiores fugit quisquam error vitae, beatae tempore
-              dolore, voluptatibus laboriosam magnam suscipit?
+              I&apos;m offering web app development and other related services
+              using modern technology and best programming practices. Personal
+              portfolios, e-commerce, SaaS, blog pages etc.
             </motion.p>
           </div>
           <motion.div

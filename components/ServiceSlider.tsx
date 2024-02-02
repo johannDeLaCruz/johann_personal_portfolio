@@ -11,32 +11,33 @@ import {
   RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
+import { FaWordpress } from "react-icons/fa";
 import { FreeMode, Pagination } from "swiper/modules";
 const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RxDesktop />,
+    title: "Development",
+    description: "Modern web apps with MERN and Next.js stacks",
   },
   {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxDesktop />,
-    title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "UI/UX mobile-first responsive web apps with modern layout",
   },
   {
     icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "Deployment",
+    description: "Deploy and manage web apps with Vercel, Firebase etc.",
   },
   {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <RxCrop />,
+    title: "RESTful APIs",
+    description: "Design APIs for (NO)SQL detabases.",
+  },
+  {
+    icon: <FaWordpress />,
+    title: "Wordpress",
+    description: "Creation and management of Wordpress pages (Elementor)",
   },
 ];
 const ServiceSlider = () => {
@@ -49,15 +50,17 @@ const ServiceSlider = () => {
       freeMode={true}
       pagination={{ clickable: true }}
       modules={[FreeMode, Pagination]}
-      className="h-[240px] sm:h-[340px] swiper-horizontal"
+      className="h-[220px] sm:h-[300px] swiper-horizontal"
     >
       {serviceData.map((item, index) => (
         <SwiperSlide key={index}>
           <Link href={"/contact"}>
             <div className="bg-primary-300/40 h-max backdrop-blur-sm rounded-lg px-6 py-8 flex sm:flex-col gap-x-6 sm:gap-x-0 group cursor-pointer hover:bg-accent-500/20 transition-all duration-300">
               <div className="text-h4 text-accent-500 mb-4 ">{item.icon}</div>
-              <div className="mb-8">
-                <div className="mb-2 text-h4 font-body font-bold">{item.title}</div>
+              <div className="mb-4">
+                <div className="mb-2 text-h4 font-body font-bold">
+                  {item.title}
+                </div>
                 <p className="max-w-[350px] leading-normal">
                   {item.description}
                 </p>

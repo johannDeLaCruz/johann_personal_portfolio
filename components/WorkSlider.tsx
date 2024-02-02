@@ -8,9 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 type Image = {
-  title: string;
+  projectTitle: string;
   path: string;
-  description: string;
+  stackDescription: string;
   link: string;
 };
 
@@ -27,30 +27,30 @@ const workSlides: WorkSlides = {
     {
       images: [
         {
-          title: "TechHub",
+          projectTitle: "TechHub",
           path: "/thumb-2.png",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          stackDescription:
+            "Serverless Full-Stack app",
           link: "https://tech-hub-woad.vercel.app",
         },
         {
-          title: "Lummus Productions",
+          projectTitle: "Lummus Productions",
           path: "/thumb-1.png",
-          description:
+          stackDescription:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           link: "https://lummus-productions.vercel.app",
         },
         {
-          title: "Casa De Elna - Restaurant",
+          projectTitle: "Casa De Elna - Restaurant",
           path: "/thumb-3.jpg",
-          description:
+          stackDescription:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           link: "https://casa-de-elna-client.vercel.app",
         },
         {
-          title: "title",
+          projectTitle: "title",
           path: "/thumb-4.jpg",
-          description:
+          stackDescription:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           link: "",
         },
@@ -114,11 +114,11 @@ const WorkSlider = () => {
                         <h2 className="font-body text-body2 font-bold">
                           PROJECT:
                         </h2>
-                        <p className="text-body1">{image.title}</p>
+                        <p className="text-body1">{image.projectTitle}</p>
                         <h2 className="font-body text-body2 font-bold">
                           STACK:
                         </h2>
-                        <p className="text-body1">{image.description}</p>
+                        <p className="text-body1">{image.stackDescription}</p>
                       </div>
                       <Link href={image.link}>
                         <div className="flex items-center gap-x-2 text-body2 tracking-[0.2em] mt-4">

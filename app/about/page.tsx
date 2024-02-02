@@ -85,6 +85,16 @@ const aboutData: AboutData[] = [
         //   <SiAdobephotoshop key="photoshop" />,
         // ],
       },
+      {
+        title: "Soft Skills",
+        description:
+          "Fast Learner, Communicative, English(fluent), Portuguese (Brazilian)(fluent), Spanish(medium), Russian(fluent), Japanese(basic)",
+        // icons: [
+        //   <FaFigma key="figma" />,
+        //   <SiAdobexd key="xd" />,
+        //   <SiAdobephotoshop key="photoshop" />,
+        // ],
+      },
     ],
   },
   // {
@@ -239,13 +249,13 @@ const AboutPage = () => {
             {aboutData[index].info?.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-primary-500"
+                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-primary-600"
               >
                 <h4 className="mb-2 md:mb-0">{item.title}:</h4>
                 {/* <div className="hidden md:flex">-</div> */}
                 <div>{item?.stage}</div>
                 <div className="flex gap-x-4">
-                  <p className="text-primary-500 text-h5 transition-all duration-500"></p>
+                  <p className="text-primary-600 text-h5 transition-all duration-500"></p>
                   {item?.description}
                   {/* {item.icons?.map((icon, iconIndex) => (
                     <div
