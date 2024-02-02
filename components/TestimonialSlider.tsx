@@ -9,16 +9,16 @@ import Image from "next/image";
 
 const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/t-avt-1.jpg",
+    name: "Wolner Júnior",
+    position: "Lummus Productions - CEO 0- Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
   {
     image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
+    name: "Milton Andersen",
+    position: "TechHub - CEO - Customer",
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },

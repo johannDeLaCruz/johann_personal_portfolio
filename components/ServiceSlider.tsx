@@ -8,7 +8,6 @@ import {
   RxDesktop,
   RxPencil2,
   RxReader,
-  RxRocket,
   RxArrowTopRight,
 } from "react-icons/rx";
 import { FaWordpress } from "react-icons/fa";

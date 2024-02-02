@@ -246,7 +246,7 @@ const AboutPage = () => {
               </div>
             ))}
           </div>
-          <div className="bg-primary-300/10 p-2 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="bg-primary-300/30 p-2 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info?.map((item, itemIndex) => (
               <div
                 key={itemIndex}
