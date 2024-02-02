@@ -7,7 +7,7 @@ import { fadeIn } from "@/utilities/variants";
 const HomePage = () => {
   return (
     <>
-      <div className="h-full text-center flex flex-col xl:justify-center xl:text-left container mx-auto xl:pt-40 pt-64">
+      <div className="h-full text-center flex flex-col xl:justify-center xl:text-left container mx-auto xl:pt-40 pt-64 mb-20 xl:mb-0">
         <motion.h1
           variants={fadeIn("down", 0.2)}
           initial="hidden"
@@ -31,7 +31,7 @@ const HomePage = () => {
           accusamus optio nostrum error modi esse numquam quos nam reprehenderit
           suscipit ab id aut.
         </motion.p>
-        <div className="flex justify-center xl:hidden relative">
+        <div className="flex justify-center xl:hidden relative pb-24">
           <ProjectsButton />
         </div>
         <motion.div
