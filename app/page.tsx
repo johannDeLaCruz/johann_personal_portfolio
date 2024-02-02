@@ -15,7 +15,7 @@ const HomePage = () => {
           exit="hidden"
           className="text-h1 font-body mb-4"
         >
-          Hello, It&apos;s Johann <span className="text-accent-500">.</span>{" "}
+          Hi, It&apos;s Johann <span className="text-accent-500">.</span>{" "}
           <br />
           I&apos;m a Full Stack WebDev
           <span className="text-accent-500">.</span>
