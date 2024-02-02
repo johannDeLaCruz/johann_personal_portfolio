@@ -34,9 +34,9 @@ const aboutData: AboutData[] = [
     title: "skills",
     info: [
       {
-        title: "Front-End",
+        title: "Front-End:",
         description:
-          "HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Framer Motion, GSAP, Redux Toolkit, Tailwind, Bootstrap, MUI, SASS",
+          "HTML5, CSS3, JavaScript, TypeScript, React, Next.js, Vue.js, Framer Motion, GSAP, Redux Toolkit, Tailwind, Bootstrap, MUI, SASS",
         // icons: [
         //   <FaHtml5 key="html" />,
         //   <FaCss3 key="css" />,
@@ -48,7 +48,7 @@ const aboutData: AboutData[] = [
         // ],
       },
       {
-        title: "Back-End",
+        title: "Back-End:",
         description:
           "Node.js, Express.js, Prisma, MongoDB, MySQL, Mongoose, Auth.js, Webpack, Redis",
         // icons: [
@@ -58,7 +58,7 @@ const aboutData: AboutData[] = [
         // ],
       },
       {
-        title: "Deployment",
+        title: "Deployment:",
         description: "Vercel, Firebase, Netlify",
         // icons: [
         //   <FaFigma key="figma" />,
@@ -67,8 +67,9 @@ const aboutData: AboutData[] = [
         // ],
       },
       {
-        title: "Other",
-        description: "Git, Npm, Visual Studio Code, Emmet, BEM, CUBE CSS",
+        title: "Other Skills:",
+        description:
+          "Git, Npm, Visual Studio Code, Emmet, BEM, CUBE CSS, i18n, a11y, SOLID, DRY",
         // icons: [
         //   <FaFigma key="figma" />,
         //   <SiAdobexd key="xd" />,
@@ -76,7 +77,7 @@ const aboutData: AboutData[] = [
         // ],
       },
       {
-        title: "UI/UX Design",
+        title: "UI/UX Design:",
         description:
           "Figma, Adobe Photoshop, Adobe Illustrator, Wordpress, DaVinci Resolve, Microsoft Visio",
         // icons: [
@@ -86,7 +87,7 @@ const aboutData: AboutData[] = [
         // ],
       },
       {
-        title: "Soft Skills",
+        title: "Soft Skills:",
         description:
           "Fast Learner, Communicative, English(fluent), Portuguese (Brazilian)(fluent), Spanish(medium), Russian(fluent), Japanese(basic)",
         // icons: [
@@ -118,7 +119,7 @@ const aboutData: AboutData[] = [
         stage: "2021 - Present",
       },
       {
-        title: "Wordpress Template Management",
+        title: "Wordpress Page Management",
         stage: "2021 - Present",
       },
       // {
@@ -249,15 +250,21 @@ const AboutPage = () => {
             {aboutData[index].info?.map((item, itemIndex) => (
               <div
                 key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-primary-600"
+                className="flex flex-col xl:flex-row max-w-max gap-x-2 justify-start text-primary-900"
               >
-                <h4 className="mb-2 md:mb-0">{item.title}:</h4>
+                <div className="w-32 mx-auto xl:mx-0">
+                  <h4 className="w-32 whitespace-nowrap self-start mb-2 md:mb-0 uppercase font-bold">
+                    {item.title}
+                  </h4>
+                </div>
                 {/* <div className="hidden md:flex">-</div> */}
-                <div>{item?.stage}</div>
-                <div className="flex gap-x-4">
-                  <p className="text-primary-600 text-h5 transition-all duration-500"></p>
+                {/* <div>{item?.stage}</div> */}
+
+                <p className="text-primary-900 transition-all duration-500">
                   {item?.description}
-                  {/* {item.icons?.map((icon, iconIndex) => (
+                </p>
+
+                {/* {item.icons?.map((icon, iconIndex) => (
                     <div
                       key={iconIndex}
                       className="text-primary-500 text-h5 transition-all duration-500"
@@ -265,7 +272,6 @@ const AboutPage = () => {
                       {icon}
                     </div>
                   ))} */}
-                </div>
               </div>
             ))}
           </div>

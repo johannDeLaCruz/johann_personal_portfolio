@@ -30,29 +30,28 @@ const workSlides: WorkSlides = {
           projectTitle: "TechHub",
           path: "/thumb-2.png",
           stackDescription:
-            "Serverless Full-Stack app",
+            "Serverless Full-Stack Next app, Auth.js, Tailwind, HeadlessUI, MongoDB",
           link: "https://tech-hub-woad.vercel.app",
         },
         {
           projectTitle: "Lummus Productions",
           path: "/thumb-1.png",
-          stackDescription:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          stackDescription: "SPA, Vue.js, React, MUI, Framer Motion",
           link: "https://lummus-productions.vercel.app",
         },
         {
           projectTitle: "Casa De Elna - Restaurant",
-          path: "/thumb-3.jpg",
+          path: "/thumb-3.png",
           stackDescription:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "Full Stack Restaurant Menu App, Vite.js, React, MUI, Axios, Express.js, MongoDB, JWT Auth",
           link: "https://casa-de-elna-client.vercel.app",
         },
         {
-          projectTitle: "title",
-          path: "/thumb-4.jpg",
+          projectTitle: "Hotel Pousada Do Lago",
+          path: "/thumb-4.png",
           stackDescription:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          link: "",
+            "Wordpress pages management with Elementor",
+          link: "https://hotelpousadadolago.com.br",
         },
       ],
     },

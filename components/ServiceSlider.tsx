@@ -17,7 +17,7 @@ const serviceData = [
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Modern web apps with MERN and Next.js stacks",
+    description: "Modern web apps with MERN and Next.js stacks.",
   },
   {
     icon: <RxPencil2 />,
@@ -31,13 +31,13 @@ const serviceData = [
   },
   {
     icon: <RxCrop />,
-    title: "RESTful APIs",
-    description: "Design APIs for (NO)SQL detabases.",
+    title: "APIs Design",
+    description: "Design RESTFul APIs with Express and Next.js",
   },
   {
     icon: <FaWordpress />,
     title: "Wordpress",
-    description: "Creation and management of Wordpress pages (Elementor)",
+    description: "Creation and management of Wordpress pages (Elementor).",
   },
 ];
 const ServiceSlider = () => {
