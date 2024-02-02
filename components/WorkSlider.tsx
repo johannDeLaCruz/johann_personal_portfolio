@@ -43,7 +43,7 @@ const workSlides: WorkSlides = {
           projectTitle: "Casa De Elna - Restaurant",
           path: "/thumb-3.png",
           stackDescription:
-            "Full Stack Restaurant Menu App, Vite.js, React, MUI, Axios, Express.js, MongoDB, JWT Auth",
+            "Full Stack Restaurant Menu App, Vite.js, React, MUI, Axios, Express.js, MongoDB, JWT Auth, React DragNDrop",
           link: "https://casa-de-elna-client.vercel.app",
         },
         {
