@@ -10,7 +10,7 @@ const Circles = () => {
         height={500}
         
       />
-      <div className="absolute top-0 left-0 animate-pulse duration-100">
+      <div className="absolute bottom-[12px] left-0 animate-pulse duration-100">
         <Image
           src={"/blinking-pc2.png"}
           alt="pc-image2"

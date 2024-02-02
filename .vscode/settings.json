@@ -21,6 +21,7 @@
         "header",
         "favicon",
         "topLeftImage",
-        "readme"
+        "readme",
+        "assets"
     ]
 }
