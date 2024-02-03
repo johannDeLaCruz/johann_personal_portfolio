@@ -99,7 +99,7 @@ const WorkSlider = () => {
     >
       {workSlides.slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-2 gap-4 cursor-pointer">
+          <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-2 gap-4 cursor-pointer pb-24 xl:pb-0">
             {slide.images.map((image, index) => (
               <div
                 key={index}

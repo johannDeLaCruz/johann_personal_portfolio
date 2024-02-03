@@ -23,7 +23,7 @@ const Layout = ({ children }: Props) => {
           <Nav />
           <Header />
         </motion.div>
-        <div className="w-full h-full absolute right-0 top-0 z-20">
+        <div className="w-full h-dvh absolute right-0 top-0 z-20">
           <TopLeftImage /> {children}
         </div>
       </AnimatePresence>
