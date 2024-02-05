@@ -8,8 +8,8 @@ const ProjectsButton = () => {
         <Image
           src={"/rounded-text.png"}
           alt="arrow"
-          width={141}
-          height={148}
+          width={140}
+          height={140}
           className="animate-spin-slow w-full h-full max-w-32 max-h-32"
         ></Image>
         <HiArrowRight className="absolute text-h4 group-hover:translate-x-2 transition-all duration-300" />
