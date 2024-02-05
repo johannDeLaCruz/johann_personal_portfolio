@@ -137,10 +137,10 @@ const config: Config = {
       black: "#000",
     },
     backgroundImage: {
-      explosion: 'url("/bg-explosion.png")',
+      explosion: 'url("/bg-explosion.webp")',
       circles: 'url("/bg-circles.png")',
       circleStar: 'url("/circle-star.svg")',
-      site: 'url("/bg-image.png")',
+      site: 'url("/bg-image.webp")',
     },
   },
   container: {

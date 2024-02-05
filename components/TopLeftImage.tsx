@@ -3,7 +3,7 @@ const TopLeftImage = () => {
   return (
     <div className="hidden xl:flex absolute top-0 left-0">
       <Image
-        src={"/top-left-image.png"}
+        src={"/top-left-image.webp"}
         width={300}
         height={300}
         alt="left-image"
