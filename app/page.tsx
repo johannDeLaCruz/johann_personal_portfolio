@@ -45,7 +45,7 @@ const HomePage = () => {
         </motion.div>
       </div>
       <div className="hidden xl:flex w-[1200px] h-full absolute right-0 bottom-0 overflow-hidden">
-        <div className="bg-none xl:bg-explosion xl:bg-right-bottom xl:bg-no-repeat w-full h-full absolute xl:bg-[length:1400px_788px]"></div>
+        <div className="bg-none xl:bg-explosion xl:bg-right-bottom xl:bg-no-repeat w-full h-full absolute -z-[1] xl:bg-[length:1400px_788px]"></div>
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"
