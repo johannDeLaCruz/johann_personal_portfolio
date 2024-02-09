@@ -26,10 +26,10 @@ const WorkPage = () => {
               exit="hidden"
               className="text-body1 mb-4 max-w-[480px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
-              maxime voluptas? Minus culpa quod deserunt aperiam reiciendis
-              eveniet asperiores fugit quisquam error vitae, beatae tempore
-              dolore, voluptatibus laboriosam magnam suscipit?
+              I develop original full stack web apps for businesses and
+              individual clients from wireframing to deployment. I usually
+              design the UI with Figma, Tailwind, MUI, etc., programming with
+              MERN or Next (serverless) and deploy with Vercel of Firebase.
             </motion.p>
           </div>
           <motion.div
@@ -43,7 +43,7 @@ const WorkPage = () => {
             <WorkSlider />
           </motion.div>
         </div>
-      </div>      
+      </div>
     </div>
   );
 };

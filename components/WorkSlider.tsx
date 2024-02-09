@@ -36,14 +36,14 @@ const workSlides: WorkSlides = {
         {
           projectTitle: "Lummus Productions",
           path: "/thumb-1.png",
-          stackDescription: "SPA, Vue.js, React, MUI, Framer Motion",
+          stackDescription: "SPA(Single-page application), Vue.js, React, MUI, Framer Motion",
           link: "https://lummus-productions.vercel.app",
         },
         {
-          projectTitle: "Casa De Elna - Restaurant",
+          projectTitle: "Casa De Elna - Menu",
           path: "/thumb-3.png",
           stackDescription:
-            "Full Stack Restaurant Menu App, Vite.js, React, MUI, Axios, Express.js, MongoDB, JWT Auth, React DragNDrop",
+            "Full Stack Restaurant Menu App, Vite.js, React, MUI, Express.js, MongoDB, JWT, DnD",
           link: "https://casa-de-elna-client.vercel.app",
         },
         {

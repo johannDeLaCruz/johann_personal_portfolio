@@ -115,12 +115,12 @@ const aboutData: AboutData[] = [
     title: "experience",
     info: [
       {
-        title: "Full Stack Web Development Freelancing",
-        stage: "2021 - Present",
+        title: "2021 - Present",
+        stage: "Full Stack Web Development Freelancing",
       },
       {
-        title: "Wordpress Page Management",
-        stage: "2021 - Present",
+        title: "2023 - Present",
+        stage: "Wordpress Pages Development",
       },
       // {
       //   title: "Intern - DEF Corporation",
@@ -132,12 +132,12 @@ const aboutData: AboutData[] = [
     title: "education",
     info: [
       {
-        title: "Mimo Bootcamp - Full Stack Web Developer",
-        // stage: "2023",
+        title: "2023",
+        stage: "Mimo Bootcamp - Full Stack Web Developer",
       },
       {
-        title: "freeCodeCamp.org - Full Stack Web Developer",
-        // stage: "2023",
+        title: "2021",
+        stage: "freeCodeCamp.org - Full Stack Web Developer",
       },
       // {
       //   title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
@@ -242,11 +242,11 @@ const AboutPage = () => {
                 <h3 className="font-body text-h5">{item.title}</h3>
                 {/* <div className="hidden md:flex">-</div> */}
                 {/* <div>{item?.info[itemIndex]?.stage}</div> */}
-                <div className="flex gap-x-4"></div>
+                {/* <div className="flex gap-x-4">-</div> */}
               </div>
             ))}
           </div>
-          <div className="bg-primary-300/30 p-2 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="bg-primary-300/30 backdrop-blur-sm p-2 xl:p-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
             {aboutData[index].info?.map((item, itemIndex) => (
               <div
                 key={itemIndex}
@@ -258,7 +258,7 @@ const AboutPage = () => {
                   </h4>
                 </div>
                 {/* <div className="hidden md:flex">-</div> */}
-                {/* <div>{item?.stage}</div> */}
+                <div>{item?.stage}</div>
 
                 <p className="text-primary-900 transition-all duration-500">
                   {item?.description}

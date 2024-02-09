@@ -9,7 +9,7 @@ const ContactPage = () => {
     <div className="">
       <div className="container mx-auto pt-64 pb-32 xl:pb-0 text-center xl:text-left flex xl:items-center justify-center">
         <PcImage />
-        <div className="flex flex-col w-full max-w-[700px] bg-primary-500/20 p-12 rounded-lg">
+        <div className="flex flex-col w-full max-w-[700px] bg-primary-500/20 backdrop-blur-sm p-12 rounded-lg">
           <motion.h2
             variants={fadeIn("up", 0.2)}
             initial="hidden"
