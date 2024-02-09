@@ -9,22 +9,28 @@ import {
   RiMailFill,
 } from "react-icons/ri";
 const socialsData = [
-  {
-    link: "https://www.instagram.com/johann.de.la.cruz/",
-    icon: <RiInstagramLine />,
-  },
   { link: "https://github.com/johannDeLaCruz", icon: <RiGithubFill /> },
-  // { link: "", icon: <RiTwitterXFill /> },
+
   {
     link: "https://www.linkedin.com/in/johann-d-l-cruz/",
     icon: <RiLinkedinFill />,
   },
-  { link: "https://wa.me/5561983799619/?text=Hello%2C%20I%20would%20like%20to%20talk%20to%20you%20about%20your%20developer%20services!", icon: <RiWhatsappLine /> },
+  { link: "mailto:johann.de.la.cruz2023@gmail.com", icon: <RiMailFill /> },
+
+  // { link: "", icon: <RiTwitterXFill /> },
+
+  {
+    link: "https://wa.me/5561983799619/?text=Hello%2C%20I%20would%20like%20to%20talk%20to%20you%20about%20your%20developer%20services!",
+    icon: <RiWhatsappLine />,
+  },
   {
     link: "https://www.facebook.com/johann.s.m.mendez",
     icon: <RiFacebookCircleFill />,
   },
-  { link: "mailto:johann.de.la.cruz2023@gmail.com", icon: <RiMailFill /> },
+  {
+    link: "https://www.instagram.com/johann.de.la.cruz/",
+    icon: <RiInstagramLine />,
+  },
 ];
 const Socials = () => {
   return (
