@@ -12,7 +12,7 @@ const testimonialData = [
     name: "Wolner Júnior",
     position: "Lummus Productions - CEO - Customer",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "We got to know Johann's work through an assignment that arose in the company. He delivered a splendid job in record time! We were pleasantly surprised and very satisfied! We definitely recommend him! Success!",
   },
   {
     image: "/t-avt-2.png",
@@ -21,13 +21,13 @@ const testimonialData = [
     message:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
   },
-  {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
+  // {
+  //   image: "/t-avt-3.png",
+  //   name: "Jhon Doe",
+  //   position: "Customer",
+  //   message:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  // },
 ];
 
 const TestimonialSlider = () => {
